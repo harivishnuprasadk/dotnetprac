@@ -27,10 +27,12 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Migrations" />
+    <None Remove="Repository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Data\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
 </Project>

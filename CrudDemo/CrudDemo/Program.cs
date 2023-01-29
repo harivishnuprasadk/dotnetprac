@@ -1,5 +1,7 @@
 ﻿using CrudDemo.Data;
 using Microsoft.EntityFrameworkCore;
+using CrudDemo.Repository;
+using CrudDemo.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<IssueDbContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
-
+builder.Services.AddScoped<IRepository<Issue, int>,IssuesRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
