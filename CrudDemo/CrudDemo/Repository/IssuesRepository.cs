@@ -22,7 +22,6 @@ namespace CrudDemo.Repository
 
         async Task<Issue> IRepository<Issue, int>.GetById(int id)
         {
-            
             return await context.Issues.FindAsync(id);
            
         }

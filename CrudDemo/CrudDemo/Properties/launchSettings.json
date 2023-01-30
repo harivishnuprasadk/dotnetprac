@@ -12,8 +12,7 @@
     "CrudDemo": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7210;http://localhost:5046",
+      "applicationUrl": "https://localhost:7210",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

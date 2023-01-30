@@ -4,9 +4,11 @@ using CrudDemo.Data;
 using CrudDemo.Models;
 using Microsoft.EntityFrameworkCore;
 using CrudDemo.Repository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CrudDemo.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class IssueControllerRefactored : ControllerBase
@@ -19,9 +21,9 @@ namespace CrudDemo.Controllers
             this.issuesRepository = issuesRepository;
         }
 
-        public IssueControllerRefactored()
-        {
-        }
+        //public IssueControllerRefactored()
+        //{
+        //}
 
         [HttpGet]
         public async Task<IEnumerable<Issue>> Get()

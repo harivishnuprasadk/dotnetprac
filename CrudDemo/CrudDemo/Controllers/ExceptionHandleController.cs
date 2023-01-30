@@ -46,6 +46,8 @@ public class ExceptionHandleController : ControllerBase
         return "post";
     }
 
+    [Route("add")]
+    [HttpGet]
     public int Add(int x, int y)
     {
         return (x + y);

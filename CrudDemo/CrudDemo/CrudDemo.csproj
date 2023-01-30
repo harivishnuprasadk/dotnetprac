@@ -16,6 +16,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Migrations" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.AzureAD.UI" Version="6.0.13" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.25.10" />
   </ItemGroup>
 
    <ItemGroup>
@@ -28,6 +30,8 @@
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Migrations" />
     <None Remove="Repository\" />
+    <None Remove="Microsoft.AspNetCore.Authentication.AzureAD.UI" />
+    <None Remove="Microsoft.Identity.Web" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
