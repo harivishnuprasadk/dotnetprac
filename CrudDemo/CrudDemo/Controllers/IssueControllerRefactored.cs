@@ -19,16 +19,11 @@ namespace CrudDemo.Controllers
             this.issuesRepository = issuesRepository;
         }
 
-        public IssueControllerRefactored()
-        {
-        }
-
         [HttpGet]
         public async Task<IEnumerable<Issue>> Get()
         {
             return await issuesRepository.GetAll();
         }
-
 
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(Issue), StatusCodes.Status200OK)]
