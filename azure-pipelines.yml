@@ -31,10 +31,11 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Visual Studio Enterprise(1)(398203e5-596e-4058-95c9-f5ee030e54d4)'
+    azureSubscription: 'Free Trial (789c3a7a-95a6-4863-809a-3cf420aa95a9)'
     appType: 'webApp'
-    WebAppName: 'test-app7858'
-    packageForLinux: '$(build.artifactStagingDirectory)\WebApp.zip'
+    WebAppName: 'crudazuredevops'
+    packageForLinux: '$(System.DefaultWorkingDirectory)\WebApp.zip'
+    
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
