@@ -1,16 +1,21 @@
 ﻿<Properties StartupConfiguration="{4242E0C5-23C8-42A0-B082-7FF6F053AF2F}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.CrudDemo PreferredExecutionTarget="/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.CrudDemo.Tests FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CrudDemo/Controllers/IssueControllerRefactored.cs">
     <Files>
-      <File FileName="CrudDemo/Controllers/IssueControllerRefactored.cs" Line="24" Column="10" />
+      <File FileName="CrudDemo/Controllers/IssueControllerRefactored.cs" Line="26" Column="10" />
       <File FileName="CrudDemo/Repository/IssuesRepository.cs" Line="1" Column="1" />
       <File FileName="CrudDemo/Repository/IRepository.cs" Line="1" Column="1" />
       <File FileName="CrudDemo/Controllers/IssueControllerNew.cs" Line="1" Column="1" />
+      <File FileName="CrudDemo/Controllers/ExceptionHandleController.cs" Line="50" Column="13" />
+      <File FileName="CrudDemo/Program.cs" Line="30" Column="1" />
+      <File FileName="CrudDemo.Tests/UnitTest1.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,9 +23,7 @@
           <Node name="CrudDemo" expanded="True">
             <Node name="NuGet.Config files" expanded="True" />
             <Node name="CrudDemo" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="IssueControllerRefactored.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Repository" expanded="True" />
@@ -30,6 +33,11 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CrudDemo" expanded="True" selected="True" />
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
