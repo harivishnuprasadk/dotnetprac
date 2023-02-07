@@ -22,9 +22,9 @@ public class FIleController : ControllerBase
     {
         _configuration = configuration;
     }
-    
 
-    [Route("fileUpload")]
+
+[Route("fileUpload")]
     [HttpPost]
     public async Task<IActionResult> UploadFile(IList<IFormFile> files)
     {
